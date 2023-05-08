@@ -8,7 +8,7 @@ import (
 
 // Input type is input
 type Input struct {
-	Name string `json:name`
+	Name string `json:"name"`
 }
 
 // Output is output
