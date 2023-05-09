@@ -13,7 +13,7 @@
             "Parameters": {
                 "FunctionName": "arn:aws:lambda:eu-west-1:394070527653:function:JSONPathLambdaFunction",
                 "Payload": {
-                    "Input.$": "$"
+                    "name.$": "$.name"
                 }
             },
             "ResultPath": "$.lambdaOutput",
