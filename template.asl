@@ -16,6 +16,7 @@
                     "Input.$": "$"
                 }
             },
+            "ResultPath": "$.lambdaOutput",
             "End": true
         }
     }
