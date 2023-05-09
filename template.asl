@@ -17,6 +17,14 @@
                 }
             },
             "ResultPath": "$.lambdaOutput",
+            "Next": "Manipulator"
+        },
+        "Manipulator": {
+            "Type": "Pass",
+            "Parameters": {
+                "Date": "09/05/2023 10:50:21",
+                "Message.$": "$.lambdaOutput.Payload.Message" 
+            },
             "End": true
         }
     }
