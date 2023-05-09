@@ -1,0 +1,10 @@
+You need to build the go script and updload the zip file in the lambda function by setting
+as Handler the string main. To build to main.go execute the following commands in Windows:
+
+set GOOS=linux
+set GOARCH=amd64
+
+go build -o main main.go
+%USERPROFILE%\Go\bin\build-lambda-zip.exe -o main.zip main
+
+Then you are ready to upload your lambda (main.zip file) in AWS
