@@ -19,7 +19,7 @@ type Output struct {
 func handler(input Input) (Output, error) {
 	fmt.Printf("Received input: %v\n", input)
 	return Output{
-		Message: "Hello" + input.Name + "!",
+		Message: "Hello, " + input.Name + "!",
 	}, nil
 }
 
